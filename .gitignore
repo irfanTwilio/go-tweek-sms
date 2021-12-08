@@ -1,5 +1,6 @@
 # Added for git to ignore checking in
 .DS_Store
+.env
 
 # Binaries for programs and plugins
 *.exe
