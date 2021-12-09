@@ -15,7 +15,7 @@ func sms(w http.ResponseWriter, req *http.Request) {
 	params := &openapi.CreateMessageParams{}
 	params.SetTo(os.Getenv("TO_PHONE_NUMBER"))
 	params.SetFrom(os.Getenv("TWILIO_PHONE_NUMBER"))
-	params.SetBody("You requested a quote")
+	params.SetBody("Tweek Week 2021!")
 
 	_, err := client.ApiV2010.CreateMessage(params)
 	if err != nil {
